@@ -10,23 +10,39 @@ function Header(props: Props) {
             {props.title}
         </h3>
 
-        <div className="header-logos">
-          <a href="https://github.com/vitoriaberdtt-boop" target="_blank">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              alt="GitHub"
-              className="header-logo"
-            />
-          </a>
+  <div className="header-logos">
+  <a href="https://www.instagram.com/vitoria_4ever/" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://cdn.simpleicons.org/instagram/FFFFFF"
+      alt="Instagram"
+      className="header-logo"
+    />
+  </a>
 
-          <a href="https://www.linkedin.com/in/vitória-berdtt/" target="_blank" rel="noopener noreferrer">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-              alt="LinkedIn"
-              className="header-logo"
-            />
-          </a>
-        </div>
+  <a href="https://github.com/vitoriaberdtt-boop" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://cdn.simpleicons.org/github/FFFFFF"
+      alt="GitHub"
+      className="header-logo"
+    />
+  </a>
+
+  <a href="https://www.linkedin.com/in/vitória-berdtt/" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://www.svgrepo.com/show/448234/linkedin.svg"
+      alt="LinkedIn"
+      className="header-logo linkedin-white"
+    />
+  </a>
+
+   <a href="mailto:vitoria.berdtt@gmail.com" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://cdn.simpleicons.org/gmail/FFFFFF"
+      alt="Email"
+      className="header-logo"
+    />
+  </a>
+</div>
       </div>
     </header>
   );

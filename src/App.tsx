@@ -29,15 +29,37 @@ function App() {
     //setContador e setMensagem atualizam a tela com os valores iniciais
   }
 
+ const getMilestoneMessage = () => {
+    const milestone = Math.floor(contador / 10);
+    
+    const messages = [
+      "", // 0-9 cliques - sem mensagem
+     "First milestone: 10 clicks!",
+      "20 clicks registered!",
+      "You've clicked 30 times!",
+      "40 clicks! Keep going",
+      "You're at the halfway point now!",
+      "60 clicks recorded!",
+      "70 clicks and still going!",
+      "80 clicks logged!",
+      "Almost at 100 clicks.",
+      "Century complete: 100 clicks!"
+    ];
+
+    return messages[milestone] || "Over 100 clicks! WOW!";
+  };
+
   return (
     <>
       <Header title="React with TypeScript"/>
 
       <main style={{ flex:1 }}>
+
         <div className="App">
           Hey! 
           <img src={reactLogo} className="logo-react" alt="React logo" />
         </div>
+
         <div className='App2'>
            This is my first React application built with TypeScript. 
            <br />
@@ -46,18 +68,26 @@ function App() {
 
         <fieldset>
         
+          {/* Botão q aciona a função 'Click' */}
           <button onClick={Click}>Click here!</button>
         
+          {/* Parágrafo dos cliques */}
           <p>Click count: {contador}</p>
           {mensagem && <p>{mensagem}</p>}
 
+          {/* Mensagem a cada 10 cliques */}
+          {contador >= 10 && <p className="milestone-message">{getMilestoneMessage()}</p>}
+
+          {/* Botão q aciona a função 'Reset' */}
           <button onClick={Reset}>Reset</button>
 
         </fieldset>
 
       </main>
 
-      <Footer title='&copy; Vitória Berdtt 2026 '/>
+      {/* Marca d'agua divônica*/}
+      <Footer title='&copy; Vitória Berdtt | 2026 '/>
+
     </>
   )
 }
