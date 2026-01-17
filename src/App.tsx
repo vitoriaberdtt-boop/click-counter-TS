@@ -64,6 +64,8 @@ function App() {
            This is my first React application built with TypeScript. 
            <br />
            I'm still learning TypeScript and how to build dynamic interfaces with it.
+           <br />
+           Feel free to check out my GitHub and see my other projects!
         </div>
 
         <fieldset>
@@ -85,7 +87,7 @@ function App() {
 
       </main>
 
-      {/* Marca d'agua divônica*/}
+      {/* Marca d'água divônica*/}
       <Footer title='&copy; Vitória Berdtt | 2026 '/>
 
     </>
